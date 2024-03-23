@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             imageView.addGestureRecognizer(tapGesture)
             imageView.isUserInteractionEnabled = true // Enable interaction
             imageView.tag = index // Tag each imageView to identify it later
-            //originalPositions = tileImageViews.map { $0.frame.origin }
+            originalPositions = tileImageViews.map { $0.frame.origin }
             
         }
     }
