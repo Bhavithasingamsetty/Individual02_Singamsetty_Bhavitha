@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             imageView.addGestureRecognizer(tapGesture)
             imageView.isUserInteractionEnabled = true // Enable interaction
             imageView.tag = index // Tag each imageView to identify it later
-            originalPositions = tileImageViews.map { $0.frame.origin }
+            //originalPositions = tileImageViews.map { $0.frame.origin }
             
         }
     }
@@ -50,6 +50,8 @@ class ViewController: UIViewController {
         if sender.titleLabel?.text == "Show Answer" {
                 for (index, imageView) in tileImageViews.enumerated() {
                     imageView.frame.origin = originalPositions[index]
+                    
+                    
                 }
                 sender.setTitle("Hide Answer", for: .normal)
             } else {
